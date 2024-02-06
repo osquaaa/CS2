@@ -32,6 +32,7 @@
 	padding: 100px 0px 0px 0px;
 }
 .contacts-main__card {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -46,4 +47,31 @@
 }
 .footer__copy {
 	margin: 0 auto;
+}
+.contacts-main__card_title {
+	color: #000;
+	font-size: 30px;
+	margin: 0px 0px 20px 0px;
+}
+.contacts-main__card_link {
+	font-size: 20px;
+	cursor: pointer;
+}
+.contacts-main__card_link:hover {
+	text-decoration: underline;
+}
+.contacts-main__card_links {
+	margin: 0px 0px 35px 0px;
+}
+.contacts-main__card-content {
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contacts-main__card_img {
+	margin: 0px 0px 70px 0px;
+}
+.contacts-main__card_img img {
+	height: 70px;
 }

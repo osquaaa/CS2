@@ -42,6 +42,7 @@ body {
 		rgba(4, 4, 4, 1) 32%,
 		rgb(255, 166, 0) 120%
 	);
+	scroll-behavior: smooth;
 }
 .wrapper {
 	min-height: 100%;
@@ -1391,4 +1392,7 @@ body {
 		margin: 0px 0px 15px 0px;
 		text-align: center;
 	}
+}
+.footer__copy {
+	margin: 0 auto;
 }
