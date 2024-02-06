@@ -44,3 +44,6 @@
 	.contacts-main__cards:last-child {
 	}
 }
+.footer__copy {
+	margin: 0 auto;
+}
