@@ -8,8 +8,10 @@
     href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
     rel="stylesheet"
 />
-    <link rel="stylesheet" href="/CSS/style.css"> 
+    <link rel="stylesheet" href="/css/style.css"> 
     <link rel="stylesheet" href="/css/cases.css">
+    <link rel="stylesheet" href="/css/case.css">
+    <link rel="stylesheet" href="/css/case.scss">
 </head>
 <body>
     <div class="wrapper">
@@ -98,7 +100,7 @@
         </div>
 </div>
     </div>-->
-
+    <div id="Paris" class="tabcontent">
     <section class="contacts-main">
         <div class="contacts-main__content">
             <div class="contacts-main__title">Кейсы</div>
@@ -110,7 +112,7 @@
                         </div>
                         <div class="contacts-main__card_title">Кейс миллионера</div>
                         <div class="contacts-main__card_price">499р</div>
-                        <div class="open-btn"><button>Открыть</button></div>
+                        <div class="open-btn"><button class="tablinks" onclick="openCity(event, 'London')">Открыть</button></div>
                     </div>
                 </div>
                 <div class="contacts-main__card">
@@ -120,7 +122,7 @@
                         </div>
                         <div class="contacts-main__card_title">Кейс бомжа</div>
                         <div class="contacts-main__card_price">37р</div>
-                        <div class="open-btn"><button>Открыть</button></div>
+                        <div class="open-btn"><button class="tablinks" onclick="openCity(event, 'London')">Открыть</button></div>
                     </div>
                 </div>
                 <div class="contacts-main__card">
@@ -130,7 +132,7 @@
                         </div>
                         <div class="contacts-main__card_title">Кейс барби</div>
                         <div class="contacts-main__card_price">209р</div>
-                        <div class="open-btn"><button>Открыть</button></div>
+                        <div class="open-btn"><button class="tablinks" onclick="openCity(event, 'London')">Открыть</button></div>
                     </div>
                 </div>
                 <div class="contacts-main__card">
@@ -140,7 +142,7 @@
                         </div>
                         <div class="contacts-main__card_title">Кейс Стим</div>
                         <div class="contacts-main__card_price">159р</div>
-                        <div class="open-btn"><button>Открыть</button></div>
+                        <div class="open-btn"><button class="tablinks" onclick="openCity(event, 'London')">Открыть</button></div>
                     </div>
                 </div>
                 <div class="contacts-main__card">
@@ -150,7 +152,7 @@
                         </div>
                         <div class="contacts-main__card_title">Кейс Iphone 15</div>
                         <div class="contacts-main__card_price">1480р</div>
-                        <div class="open-btn"><button>Открыть</button></div>
+                        <div class="open-btn"><button class="tablinks" onclick="openCity(event, 'London')">Открыть</button></div>
                     </div>
                 </div>
                 <div class="contacts-main__card">
@@ -160,12 +162,13 @@
                         </div>
                         <div class="contacts-main__card_title">Кейс Team Spirit</div>
                         <div class="contacts-main__card_price">1480р</div>
-                        <div class="open-btn"><button>Открыть</button></div>
+                        <div class="open-btn"><button class="tablinks" onclick="openCity(event, 'London')">Открыть</button></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    </div>
 
     <div class="footer__bottom">
         <div class="footer__container _container">
@@ -186,7 +189,39 @@
             </div>
         </div>
     </div>
+    <div class="tab">
+        <!--<button class="tablinks" onclick="openCity(event, 'London')">London</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>-->
+      </div>
+      
+      <!-- Tab content -->
+      <div id="London" class="tabcontent _container open-case">
+        <div class="upper-case_content">
+            <h1 class="case_open-title">Отрытие кейса</h1>
+        <button class="tablinks back-btn" onclick="openCity(event, 'Paris')" id="defaultOpen">&#x2190;Назад</button>
+    </div>
+        <div class="app">
+            <img class="pointer" src="IMG/pointer.png" alt="">
+            <div class="scope">
+              <ul class="list"></ul>
+            </div>
+        
+            <button onclick="start()" class="start">Крутить Демо</button>
+          </div>
+        
+      </div>
+      
+      <div id="Paris" class="tabcontent">
+
+      </div>
+      
+      <div id="Tokyo" class="tabcontent">
+
+      </div>
     </div>  
     
+    <script src="/js/script.js"></script>
+    <script src="/js/case.js"></script>
 </body>
 </html>
