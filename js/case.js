@@ -2,11 +2,11 @@ const cells = 31
 
 // From 0.001 to 100
 const items = [
-  {name: 'iPhone', img: '/case-img/pngegg.png', chance: 5},
-  {name: 'Keyboard', img: '/case-img/pngegg (1).png ', chance: 10},
-  {name: 'Ak', img: '/case-img/pngegg (2).png', chance: 15},
-  {name: 'mka', img: '/case-img/pngegg (3).png', chance: 20},
-  {name: 'usp', img: '/case-img/pngegg (4).png', chance: 25}
+  {name: 'iPhone', img: 'case-img/pngegg.png', chance: 5},
+  {name: 'Keyboard', img: 'case-img/pngegg (1).png ', chance: 10},
+  {name: 'Ak', img: 'case-img/pngegg (2).png', chance: 15},
+  {name: 'mka', img: 'case-img/pngegg (3).png', chance: 20},
+  {name: 'usp', img: 'case-img/pngegg (4).png', chance: 25}
 ]
 
 function getItem() {
